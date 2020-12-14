@@ -16,7 +16,7 @@ const customTheme = createMuiTheme({
   },
 });
 
-const Styledvatar = styled(Avatar)`
+const StyledAvatar = styled(Avatar)`
   ${({ theme }) => `
   cursor: pointer;
   background-color: ${theme.palette.primary.main};
@@ -35,7 +35,7 @@ export default function TransitionHover() {
     <NoSsr>
       <MuiThemeProvider theme={customTheme}>
         <ThemeProvider theme={customTheme}>
-          <Styledvatar>OP</Styledvatar>
+          <StyledAvatar>OP</Styledvatar>
         </ThemeProvider>
       </MuiThemeProvider>
     </NoSsr>
